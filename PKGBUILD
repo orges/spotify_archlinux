@@ -50,16 +50,16 @@ else
     _SPOTIFY_ARCH=amd64
 fi
 
-prepare() {
-    # Validate hashes from the PGP signed "Release" file
-    echo "$(grep non-free/binary-${_SPOTIFY_ARCH}/Packages ${pkgname}-${pkgver}-Release | tail -n 2 | head -n 1 | awk '{print $1}') ${pkgname}-${pkgver}-${CARCH}-Packages" \
-        > "${pkgname}-${pkgver}-${CARCH}-Packages.sha256"
-    sha256sum -c "${pkgname}-${pkgver}-${CARCH}-Packages.sha256"
-
-    echo "$(grep SHA512 ${pkgname}-${pkgver}-${CARCH}-Packages | head -n 1 | awk '{print $2}') ${pkgname}-${pkgver}-${CARCH}.deb" \
-        > "${pkgname}-${pkgver}-${CARCH}.deb.sha512"
-    sha512sum -c "${pkgname}-${pkgver}-${CARCH}.deb.sha512"
-}
+#prepare() {
+#    # Validate hashes from the PGP signed "Release" file
+#    echo "$(grep non-free/binary-${_SPOTIFY_ARCH}/Packages ${pkgname}-${pkgver}-Release | tail -n 2 | head -n 1 | awk '{print $1}') ${pkgname}-${pkgver}-${CARCH}-Packages" \
+#        > "${pkgname}-${pkgver}-${CARCH}-Packages.sha256"
+#    sha256sum -c "${pkgname}-${pkgver}-${CARCH}-Packages.sha256"
+#
+#    echo "$(grep SHA512 ${pkgname}-${pkgver}-${CARCH}-Packages | head -n 1 | awk '{print $2}') ${pkgname}-${pkgver}-${CARCH}.deb" \
+#        > "${pkgname}-${pkgver}-${CARCH}.deb.sha512"
+#    sha512sum -c "${pkgname}-${pkgver}-${CARCH}.deb.sha512"
+#}
 
 package() {
     cd "${srcdir}"
