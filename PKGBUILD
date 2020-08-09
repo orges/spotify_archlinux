@@ -4,12 +4,12 @@
 # Contributor: Eothred <yngve.levinsen@gmail.com>
 
 pkgname=spotify
-pkgver=1.1.10.546
+pkgver=1.1.26.501
 epoch=1
-_commit=ge08ef575
-_ver_x86_64=19
+_commit=gbe11e53b
+_ver_x86_64=15
 #_ver_i686=10
-pkgrel=4
+pkgrel=5
 pkgdesc='A proprietary music streaming service'
 arch=('x86_64')
 license=('custom')
@@ -38,7 +38,7 @@ sha512sums=('999abe46766a4101e27477f5c9f69394a4bb5c097e2e048ec2c6cb93dfa1743eb43
             '2e16f7c7b09e9ecefaa11ab38eb7a792c62ae6f33d95ab1ff46d68995316324d8c5287b0d9ce142d1cf15158e61f594e930260abb8155467af8bc25779960615'
             'SKIP'
             'SKIP')
-sha512sums_x86_64=('f004083eee00600a51e50d7dee03846293b5ccd6966786e91055564c7963917b9aaa917de41f299a0f5b7baecea5f466fb37722b8631743ff2ca15f43851f5f4'
+sha512sums_x86_64=('af9f1beafe0e4d2313326d1a55675550e8c3fcd5cd2dc0954127094c563048b98f74f669d99a10f0ef6e3b3405856bb9d6a2561644a434ab6bade9c812296963'
                    '39074e57abb9a647b4b27cc09bf91dd80a16589c8503b17061c23277b7718e778834bb79c168c771b9615d9e247f1ce9c5c597a10db905874a5d5c79f1109856')
 validpgpkeys=('931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90'
               '2EBF997C15BDA244B6EBF5D84773BD5E130D1D45') # Spotify <tux@spotify.com>
